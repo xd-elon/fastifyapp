@@ -6,7 +6,7 @@ export async function checkSessionIdExists(
 ) {
   const { sessionId } = request.cookies
 
-  console.log(sessionId)
+  // console.log(sessionId)
 
   if (!sessionId) {
     return reply.status(401).send({
